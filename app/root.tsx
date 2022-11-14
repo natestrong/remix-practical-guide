@@ -36,6 +36,20 @@ export default function App() {
   );
 }
 
+export function ErrorBoundary({ error }: { error: Error }) {
+  return (
+    <html lang="en">
+      <head>
+        <title>Oh no!</title>
+      </head>
+      <body>
+        <h1>Oh no!</h1>
+        <pre>{error.message}</pre>
+      </body>
+    </html>
+  );
+}
+
 export function links() {
   return [
     { rel: "stylesheet", href: styles },
