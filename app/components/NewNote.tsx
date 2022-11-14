@@ -1,5 +1,5 @@
 import styles from './NewNote.css';
-import {Form, useActionData, useTransition as useNavigation} from "@remix-run/react";
+import {Form, Link, useActionData, useTransition as useNavigation} from "@remix-run/react";
 
 function NewNote() {
     const data = useActionData();
